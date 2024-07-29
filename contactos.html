@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <link rel="icon" href="images/iconos/icono_top.png" type="image/x-icon" />
+	    <title>Inversiones Lisarly - Contactos</title>
+		<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+		<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<script src="js/jquery-2.2.3.min.js"></script>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+		</style> 
+	</head>
+
+	<body>
+		<!-- Banner inicial con el menu-->
+		<div class="agileits-banner">
+			<div class="bnr-agileinfo">
+				<div class="banner-w3text w3layouts"></div>
+				<!-- navigation -->
+				<div class="top-nav w3-agiletop">
+					<div class="agile_inner_nav_w3ls">
+						<div class="navbar-header w3llogo">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<h1><a href="index.html" class="c-morado" style="font-family: 'Open Sans', sans-serif;">Inversiones Lisarly C.A</a></h1>
+						</div>
+						<!-- Menu -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<div class="w3menu navbar-left">
+								<ul class="nav navbar">
+									<li><a href="./index.html">Inicio</a></li>
+									<li><a href="./historia.html">Historia</a></li>
+									<li><a href="./servicios.html">Servicios</a></li>
+									<li><a href="./productos.html">Productos</a></li>
+									<li><a href="./galeria.html">Galeria</a></li>
+									<li><a href="#" class="active">Contactos</a></li>
+								</ul>
+							</div>
+							<br>
+							<div class="clearfix"> </div>
+						</div>
+						<!-- Final del Menu -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Final Benner Inicial con el menu-->
+
+		<!-- Contactos -->
+		<div class="contact">
+			<div class="container">
+				<h3 class="agileits-title c-morado">Ponte en contacto</h3>
+				<div class="contact-agileinfo">
+					<div class="col-md-7 contact-right">
+						<form action="#" method="post" id="form_contact">
+							<input type="text" class="form-control" name="name" placeholder="Nombre" required="">
+							<br>
+							<input type="text" class="form-control" name="email" placeholder="Correo Electronico" required="">
+							<br>
+							<input type="text" class="form-control" name="phone" placeholder="Telefono" required="">
+							<br>
+							<textarea class="form-control" name="message" placeholder="Mensaje" required=""></textarea>
+							<br>
+							<input type="submit" value="Enviar">
+						</form>
+					</div>
+
+					<div class="col-md-5 contact-left">
+						<div class="address">
+							<h5>Direccion:</h5>
+							<p><i class="glyphicon glyphicon-home"></i> Sector El Gaitero Calle 130, AV 72, Local 72-138.</p>
+						</div>
+						<div class="address address-mdl">
+							<h5>Telefonos:</h5>
+							<p><i class="glyphicon glyphicon-earphone"></i> +58 424-6552942</p>
+							<p><i class="glyphicon glyphicon-phone"></i> +58 424-6818905</p>
+						</div>
+						<div class="address">
+							<h5>Correo Electronico:</h5>
+							<p><i class="glyphicon glyphicon-envelope"></i> <a href="mailto:info@example.com">lisarly2018@gmail.com</a></p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<div class="agileits-w3layouts-map">
+			<img src="./images/contactos.html.png" alt="" />
+		</div>
+		<!-- Final Contactos -->
+
+		<!-- copy rights -->
+		<div class="copy-w3right">
+			<div class="container">
+				<p>Inversiones Lisarly © <a id="fecha"></a>. Todos los derechos reservados </p>
+			</div>
+		</div>
+		<!-- Final copy rights -->
+
+        <!--================ Mensajes Para cuando se envie el formulario =================-->
+        <div id="success" class="modal modal-message" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content" style="border-radius: 20px;">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <h2>Gracias por enviar tu mensaje</h2>
+                        <p>Nos pondremos en contacto lo más pronto posible</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================Mensajes Para cuando se envie el formulario =================-->
+
+		<script src="js/SmoothScroll.min.js"></script>
+		<!-- start-smooth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script src="js/bootstrap.js"></script>
+        <script src="js/jquery.form.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/contact.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				/* Colocar año al copy rights */
+				fecha = new Date();
+				year = fecha.getFullYear();
+				$("#fecha").text(year);
+
+				/* Boton para regresar */
+				$().UItoTop({
+					easingType: 'easeOutQuart'
+				});
+			});
+		</script>	
+	</body>
+</html>
